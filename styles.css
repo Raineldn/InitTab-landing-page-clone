@@ -172,10 +172,31 @@ i {
 }
 
 .popular-entries {
-	padding-left: 50px;
+	margin-left: 40px;
+	padding-left: 20px;
 	padding-top: 35px;
 }
 
+.title {
+	color: white;
+	font-size: 14px;
+}
+
+.author {
+	color: var(--blue-header);
+}
+
+.redditor {
+	color: #DFD57A;
+}
+
+.score {
+	color: var(--light-text);
+}
+
+.reddit-link {
+	color: #FB88CC;
+}
 
 /* Relevant JavaScript History */
 

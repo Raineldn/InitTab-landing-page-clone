@@ -55,8 +55,12 @@ const popularPosts = [
 	"score": "36"
 }];
 
-
-
-
-
+popularPosts.forEach(function(p){
+	title.innerHTML += `
+	<p>${p.title}</p>
+	<p class="author">Posted by: <span class="redditor">${p.author}</span></p>
+	<p class="score">Reddit Score: ${p.score}</p>
+	<a href="#" class="reddit-link">Link to Comments</a>
+	`;
+})
 
