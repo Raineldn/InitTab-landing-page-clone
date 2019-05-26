@@ -1,5 +1,6 @@
 const popularEntries = document.querySelector('.popular-entries');
 const relevantHistories = document.querySelector('.relevant-histories');
+const githubIssues = document.querySelector('.issues-content');
 
 // Popular On R/JavaScript
 const popularPosts = [
@@ -133,5 +134,51 @@ relevantHistory.forEach(function(li){
 	</li>
 	`;
 })
+
+const issues = [
+{
+	"repo": "Repo: rachelandrew/cssgrid-ama",
+	"issue": "Issue #85",
+	"note": "vertical scrollbar when using css grid"
+},
+{
+	"repo": "Repo: Raineldn/github-upload",
+	"issue": "Issue #1",
+	"note": "Planning the upload to GitHub"
+},
+{
+	"repo": "Repo: Raineldn/github-slideshow",
+	"issue": "Issue #2",
+	"note": "Your first contribution"
+},
+{
+	"repo": "Repo: Raineldn/github-slideshow",
+	"issue": "Issue #1",
+	"note": "Getting started with GitHub"
+},
+{
+	"repo": "Repo: Lorem ipsum dolor sit amet.",
+	"issue": "Issue #4",
+	"note": "Lorem ipsum dolor sit amet, consectetur."
+}];
+
+issues.forEach(function(li){
+	githubIssues.innerHTML += `
+	<li>
+	<div class="repo">${li.repo}</div>
+	<div class="issue">${li.issue}</div>
+	<div class="note">${li.note}</div>
+	</li>
+	`;
+});
+
+
+
+
+
+
+
+
+
 
 

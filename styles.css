@@ -50,6 +50,12 @@ body {
 	height: 100vh;
 }
 
+.right {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 2fr 1fr;
+}
+
 /* Sidebar */
 
 .sidebar {
@@ -288,10 +294,6 @@ h3 {
 
 /* GitHub History*/
 
-.github-history {
-	height: 100vh;
-}
-
 h6 {
 	text-align: center;
 	font-size: 12px;
@@ -337,3 +339,37 @@ h6 {
 	text-align: center;
 	margin-left: -70px;
 }
+
+.repo {
+	color: #5E73A1;
+	text-align: left;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+.issue {
+	color: var(--yellow-link);
+	font-size: 14px;
+	text-align: left;
+	margin-bottom: 7px;
+}
+
+.note {
+	color: white;
+	font-size: 14px;
+	text-align: left;
+}
+
+.issues-content {
+	margin-top: 35px;
+	margin-left: 20px;
+}
+
+.issues-content li {
+	border-left: 3px solid #44475a;
+	padding-left: 7px;
+	list-style-type: none;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
