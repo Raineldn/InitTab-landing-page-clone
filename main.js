@@ -67,7 +67,7 @@ popularPosts.forEach(function(li){
 const relevantHistory = [
 {
 	"icon": "github",
-	"link": "iamshaunjp/modern-javascript: All lecture files from the Modern JavaScript (Novice to Ninja) course on Udemy...",
+	"link": "iamshaunjp/modern-javascript: All lecture files from the...",
 	"time": "22 minutes ago"
 },
 {
@@ -82,7 +82,7 @@ const relevantHistory = [
 },
 {
 	"icon": "github",
-	"link": "getify/You-Dont-Know-JS: A book series on JavaScript. @YDKJS on twitter...",
+	"link": "getify/You-Dont-Know-JS: A book series on JavaScript. @Y...",
 	"time": "4 days ago"
 },
 {
@@ -92,22 +92,22 @@ const relevantHistory = [
 },
 {
 	"icon": "github",
-	"link": "modern-javascript/weather_app at lesson-108 · iamshaunjp/modern-javascript...",
+	"link": "modern-javascript/weather_app at lesson-108 · iamshaunjp...",
 	"time": "4 days ago"
 },
 {
 	"icon": "github",
-	"link": "modern-javascript/weather_app/img at lesson-108 · iamshaunjp/modern-javascript...",
+	"link": "modern-javascript/weather_app/img at lesson-108 · iamsha...",
 	"time": "4 days ago"
 },
 {
 	"icon": "github",
-	"link": "modern-javascript/weather_app/img/icons at lesson-108 · i...",
+	"link": "modern-javascript/weather_app/img/icons at lesson-108 · ...",
 	"time": "4 days ago"
 },
 {
 	"icon": "github",
-	"link": "modern-javascript/weather_app at lesson-100 · iamshaunjp/modern-javascript...",
+	"link": "modern-javascript/weather_app at lesson-100 · iamshaunjp...",
 	"time": "4 days ago"
 },
 {
@@ -117,19 +117,19 @@ const relevantHistory = [
 },
 {
 	"icon": "github",
-	"link": "modern-javascript/weather_app at lesson-99 · iamshaunjp/modern-javascript4...",
+	"link": "modern-javascript/weather_app at lesson-99 · iamshaunjp/...",
 	"time": "4 days ago"
 },
 {
 	"icon": "github",
-	"link": "modern-javascript/weather_app/scripts at lesson-99 · iamshaunjp/modern-javascript...",
+	"link": "modern-javascript/weather_app/scripts at lesson-99 · iam...",
 	"time": "4 days ago"
 }];
 
 relevantHistory.forEach(function(li){
 	relevantHistories.innerHTML += `
 	<li class="histories">
-	<img src="imgs/${li.icon}-icon"><a href="#" class="link"> ${li.link}</a><span class="time"> ${li.time}</span>
+	<img src="imgs/${li.icon}-icon.png" height="17px" width="17px"><a href="#" class="link"> ${li.link}</a><span class="time"> ${li.time}</span>
 	</li>
 	`;
 })
