@@ -291,3 +291,49 @@ h3 {
 .github-history {
 	height: 100vh;
 }
+
+h6 {
+	text-align: center;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #5E73A1;
+	margin-bottom: 25px;
+}
+
+.issues-pulls {
+	text-align: center;
+}
+
+.issues {
+	display: inline-block;
+	position: relative;
+	vertical-align: bottom;
+	padding-top: 0px;
+	font-size: 14px;
+	color: var(--yellow-link);
+}
+
+.pull-reqs {
+	display: inline-block;
+	position: relative;
+	vertical-align: bottom;
+	padding-top: 0px;
+	font-size: 14px;
+	color: var(--pink-link);
+}
+
+.caret-1 {
+	position: absolute;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: center;
+	margin-left: -35px;
+}
+
+.caret-2 {
+	position: absolute;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: center;
+	margin-left: -70px;
+}
