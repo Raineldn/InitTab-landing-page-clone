@@ -1,4 +1,5 @@
 const popularEntries = document.querySelector('.popular-entries');
+const relevantHistories = document.querySelector('.relevant-histories');
 
 // Popular On R/JavaScript
 const popularPosts = [
@@ -62,3 +63,75 @@ popularPosts.forEach(function(li){
 	<h3><a href="#" class="reddit-link">Link to Comments</a></h3></li>
 	`;
 })
+
+const relevantHistory = [
+{
+	"icon": "github",
+	"link": "iamshaunjp/modern-javascript: All lecture files from the Modern JavaScript (Novice to Ninja) course on Udemy...",
+	"time": "22 minutes ago"
+},
+{
+	"icon": "bootstrap",
+	"link": "JavaScript - Bootstrap",
+	"time": "5 hours ago"
+},
+{
+	"icon": "udemy",
+	"link": "Modern JavaScript (from Novice to Ninja) | Udemy",
+	"time": "a day ago"
+},
+{
+	"icon": "github",
+	"link": "getify/You-Dont-Know-JS: A book series on JavaScript. @YDKJS on twitter...",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "iamshaunjp/modern-javascript at lesson-108",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "modern-javascript/weather_app at lesson-108 · iamshaunjp/modern-javascript...",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "modern-javascript/weather_app/img at lesson-108 · iamshaunjp/modern-javascript...",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "modern-javascript/weather_app/img/icons at lesson-108 · i...",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "modern-javascript/weather_app at lesson-100 · iamshaunjp/modern-javascript...",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "iamshaunjp/modern-javascript at lesson-100",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "modern-javascript/weather_app at lesson-99 · iamshaunjp/modern-javascript4...",
+	"time": "4 days ago"
+},
+{
+	"icon": "github",
+	"link": "modern-javascript/weather_app/scripts at lesson-99 · iamshaunjp/modern-javascript...",
+	"time": "4 days ago"
+}];
+
+relevantHistory.forEach(function(li){
+	relevantHistories.innerHTML += `
+	<li class="histories">
+	<img src="imgs/${li.icon}-icon"><a href="#" class="link"> ${li.link}</a><span class="time"> ${li.time}</span>
+	</li>
+	`;
+})
+
+
