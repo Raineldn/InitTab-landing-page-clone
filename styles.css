@@ -3,81 +3,103 @@
 
 /* CSS Variables */
 :root {
-	--primary-background: #282A36;
 	--nav-background: #44475A;
+	--primary-background: #282A36;
 	--blue-header: #8DEEFF;
 	--light-text: #465578;
 	--yellow-link: #DFD57A;
 	--pink-link: #FB88CC;
 }
 
-/* Body */
-html {
-	box-sizing: border-box;
-	color: var(--blue-header);
-}
 
 body {
-	background: var(--primary-background);
-	margin: 0;
 	font-family: 'Inconsolata', monospace;
-	padding-left: 110px;
-	line-height: 1.3;
+	padding: 0;
+	margin: 0;
 }
 
-/* Navigation */
-.main ul {
+/* Headers */
+
+.blue-header {
+	color: var(--blue-header);
+	text-transform: uppercase;
+	padding-top: 35px;
+	text-align: center;
+}
+
+/* Website Layout */
+
+.container {
 	display: grid;
-	padding-left: 3px; 
-	list-style: none;
-	align-items: left;
+	grid-template-columns: 140px 1fr 2fr 1fr;
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	background: var(--primary-background);
 }
 
+.middle {
+	display: grid;
+	grid-template-rows: 50% 50%;
+	height: 100vh;
+}
 
-#sidebar {
-    width: 140px;
-    font-size: 15px;
-    line-height: 2;
-    padding-top: 7px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    background: #44475a;
-    color: #fff;
+/* Sidebar */
+
+.sidebar {
+	background: var(--nav-background);
+	height: 100vh;
+	position: relative;
 }
 
 button {
- 	font-size: 0.9em;
- 	padding-top: 10px;
+ 	font-size: 11px;
+ 	text-decoration: none;
+ 	padding-top: 18px;
+ 	padding-left: 0px;
     text-transform: uppercase;
     background: transparent;
     border: none;
     text-align: left;
-    outline: none !important; 
+    outline: none;
 }
 
-.main {
-	height: 87vh;
+button a {
+	text-decoration: none;
 }
 
-.social-media {
-	padding-left: 14px;
-	padding-bottom: 8px;
+ul {
+	list-style-type: none;
+	padding: 0px 0px 0px 10px;
+	margin-top: 0;
+	margin-left: 0px;
+	padding-left: 0px;
 }
 
 .logo {
 	width: 100px;
 	height: 29px;
-	padding-left: 3px;
-	margin-bottom: 8px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 6%;
+	margin-bottom: 5px;
 }
 
-/* Icons */
+.media-icon {
+	position: absolute;
+	bottom: 2%;
+}
+
+.media {
+	margin-left: 4px;
+}
+
 i {
 	width: 20px;
-	height: 21px;
+	height: 20px;
 	box-sizing: border-box;
 	text-align: center;
 	border-radius: 8%;
@@ -154,27 +176,38 @@ i {
 	pointer-events: none;
 }
 
-.social-media i {
-	font-size: 22px;
-}
+/* Popular on R/JavaScript */
 
-/* Headers */
-.blue-header {
-	color: var(--blue-header);
-	text-transform: uppercase;
-	padding-top: 35px;
-	text-align: center;
-}
-
-/* Popular on R/JAVASCRIPT */
 .popular {
-	height: 100vh;
-}
+	margin-left: 5%;
+ 	height: 100vh;
+ 	overflow-y: auto;
+ 	margin-left: 20px;
+ }
 
 .popular-entries {
-	margin-left: 40px;
-	padding-left: 20px;
-	padding-top: 35px;
+	overflow-y: scroll;
+	font-size: 11.5px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.reddit {
+	margin-bottom: 35px;
+}
+
+li {
+	border-left: 3px solid #44475a;
+	padding-left: 7px;
+	list-style-type: none;
+}
+
+.rjs {
+	margin-bottom: 32px;
+}
+
+h3 {
+	margin: 0;
 }
 
 .title {
@@ -198,12 +231,20 @@ i {
 	color: #FB88CC;
 }
 
-/* Relevant JavaScript History */
+/* Relevant JS History */
 
-.middle {
-	height: 100vh;
+.relevant {
+	height: 50vh;
 }
 
-.right {
+/* Date and Time */
+
+.date-time {
+	height: 50vh;
+}
+
+/* GitHub History*/
+
+.github-history {
 	height: 100vh;
 }

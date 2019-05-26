@@ -1,6 +1,4 @@
-const title = document.querySelector('.title');
-const author = document.querySelector('.author');
-const score = document.querySelector('.score');
+const popularEntries = document.querySelector('.popular-entries');
 
 // Popular On R/JavaScript
 const popularPosts = [
@@ -55,12 +53,12 @@ const popularPosts = [
 	"score": "36"
 }];
 
-popularPosts.forEach(function(p){
-	title.innerHTML += `
-	<p>${p.title}</p>
-	<p class="author">Posted by: <span class="redditor">${p.author}</span></p>
-	<p class="score">Reddit Score: ${p.score}</p>
-	<a href="#" class="reddit-link">Link to Comments</a>
+popularPosts.forEach(function(li){
+	popularEntries.innerHTML += `
+	<li class="rjs">
+	<h3 class="title">${li.title}</h3>
+	<h3 class="author">Posted by: <span class="redditor">${li.author}</span></h3>
+	<h3 class="score">Reddit Score: ${li.score}</h3>
+	<h3><a href="#" class="reddit-link">Link to Comments</a></h3></li>
 	`;
 })
-
