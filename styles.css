@@ -290,6 +290,21 @@ h3 {
 
 .date-time {
 	height: 50vh;
+	position: relative;
+}
+
+.clock {
+	position: absolute;
+    top: 0%;
+    left: 20%;
+    margin-top: 100px;
+    font-size: 130px;
+}
+
+.session {
+	position: absolute;
+	right: 30%;
+	top: 45%;
 }
 
 /* GitHub History*/
@@ -372,4 +387,3 @@ h6 {
 	margin-bottom: 30px;
 	cursor: pointer;
 }
-

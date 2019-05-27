@@ -1,6 +1,7 @@
 const popularEntries = document.querySelector('.popular-entries');
 const relevantHistories = document.querySelector('.relevant-histories');
 const githubIssues = document.querySelector('.issues-content');
+const amPm = document.querySelector('.session');
 
 // Popular On R/JavaScript
 const popularPosts = [
@@ -172,9 +173,38 @@ issues.forEach(function(li){
 	`;
 });
 
+// Clock
 
+function showTime(){
+	var date = new Date();
+	var h = date.getHours();
+	var m = date.getMinutes();
+	var s = date.getSeconds();
+	var clockSession = "AM";
 
+	if(h == 0){
+		h = 12;
+	}
 
+	if(h > 12){
+		h = h - 12;
+		// clockSession = "PM";
+	}
+
+	h = (h < 10) ? + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+
+    var time = h + ":" + m;
+
+    amPm.textContent = (date.getHours() < 12 ? "AM" : "PM");
+
+    document.getElementById("ClockDisplay").textContent = time;
+
+    setTimeout(showTime, 1000);
+}
+
+showTime();
 
 
 
