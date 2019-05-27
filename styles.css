@@ -292,28 +292,14 @@ h3 {
 .date-time {
 	height: 50vh;
 	position: relative;
-}
-
-/*.clock {
-	position: absolute;
-    top: 0%;
-    left: 20%;
-    margin-top: 100px;
-    font-size: 130px;
-}
-
-.session {
-	position: absolute;
-	right: 30%;
-	top: 45%;
-}*/
-
-.clock-session {
-	top: 25%;
-	position: absolute;
 	text-align: center;
 	margin-left: 100px;
 	margin-right: 100px;
+}
+
+.clock-session {
+	margin-top: 65px;
+	display: inline-block;
 	font-family: 'Maven Pro', sans-serif;
 	font-weight: 700;
 	color: var(--light-text);
@@ -325,11 +311,43 @@ h3 {
 }
 
 .session {
+	display: inline-block;
 	margin-top: 80px;
-	margin-left: 5px;
+	margin-right: 10px;
 	float: right;
 	font-size: 35px;
 }
+
+.date-display {
+	margin-top: -20px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 20px;
+	color: var(--light-text);
+}
+
+/* Did you know? Popup */
+
+.main-popup {
+	color: var(--light-text);
+	text-align: center;
+	font-size: 13px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.got-it {
+	color: #F9B564;
+}
+
+.fa-question-circle {
+	color: #F9B564;
+}
+
+.hidden {
+	display: none !important;
+}
+
+
 
 /* GitHub History*/
 

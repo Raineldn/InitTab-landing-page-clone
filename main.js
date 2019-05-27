@@ -176,11 +176,11 @@ issues.forEach(function(li){
 // Clock
 
 function showTime(){
-	var date = new Date();
-	var h = date.getHours();
-	var m = date.getMinutes();
-	var s = date.getSeconds();
-	var clockSession = "AM";
+	let date = new Date();
+	let h = date.getHours();
+	let m = date.getMinutes();
+	let s = date.getSeconds();
+	let clockSession = "AM";
 
 	if(h == 0){
 		h = 12;
@@ -195,7 +195,7 @@ function showTime(){
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
-    var time = h + ":" + m;
+    let time = h + ":" + m;
 
     amPm.textContent = (date.getHours() < 12 ? "AM" : "PM");
 
@@ -205,6 +205,22 @@ function showTime(){
 }
 
 showTime();
+
+// Date
+
+const months = ["JAN", "FEB", "MAR","APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+let current_datetime = new Date();
+let formatted_date = current_datetime.getDate() + " " + months[current_datetime.getMonth()] + " " + current_datetime.getFullYear();
+
+document.querySelector('.date-display').innerHTML = formatted_date;
+
+// Hide Did You Know?
+
+let popup = document.querySelector('.popup');
+
+document.querySelector('.got-it').addEventListener("click", function(){
+	popup.classList.add('hidden');
+});
 
 
 
