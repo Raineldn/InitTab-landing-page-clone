@@ -195,9 +195,7 @@ function showTime(){
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
-    let time = h + ":" + m;
-
-    amPm.textContent = (date.getHours() < 12 ? "AM" : "PM");
+    let time = h + ":" + m + (date.getHours() < 12 ? " AM" : " PM");
 
     document.getElementById("ClockDisplay").textContent = time;
 

@@ -219,6 +219,12 @@ i {
 	list-style-type: none;
 }
 
+.popular li:hover {
+	transition: 0.8s;
+	border-left: 3px solid #5CF481;
+	cursor: pointer;
+}
+
 li {
 	padding-left: 7px;
 	list-style-type: none;
@@ -293,8 +299,6 @@ h3 {
 	height: 50vh;
 	position: relative;
 	text-align: center;
-	margin-left: 100px;
-	margin-right: 100px;
 }
 
 .clock-session {
@@ -307,19 +311,11 @@ h3 {
 
 .clock {
 	float: left;
-	font-size: 120px;
-}
-
-.session {
-	display: inline-block;
-	margin-top: 80px;
-	margin-right: 10px;
-	float: right;
-	font-size: 35px;
+	font-size: 90px;
 }
 
 .date-display {
-	margin-top: -20px;
+	margin-top: 10px;
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 20px;
 	color: var(--light-text);
@@ -427,5 +423,11 @@ h6 {
 	padding-left: 7px;
 	list-style-type: none;
 	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.issues-content li:hover {
+	transition: 0.8s;
+	border-left: 3px solid #5CF481;
 	cursor: pointer;
 }
