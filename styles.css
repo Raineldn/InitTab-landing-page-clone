@@ -5,6 +5,7 @@
 /* WebKit */
 .relevant::-webkit-scrollbar { width: 0 !important }
 .popular::-webkit-scrollbar { width: 0 !important }
+.github-history::-webkit-scrollbar { width: 0 !important }
 
 /* CSS Variables */
 :root {
@@ -16,11 +17,14 @@
 	--pink-link: #FB88CC;
 }
 
-
 body {
 	font-family: 'Inconsolata', monospace;
 	padding: 0;
 	margin: 0;
+	height: 100vh;
+}
+
+html {
 	height: 100vh;
 }
 
@@ -39,7 +43,7 @@ body {
 .container {
 	display: grid;
 	grid-template-columns: 140px 1fr 2fr 1fr;
-	height: 100vh;
+	max-height: 100vh;
 	width: 100vw;
 	padding: 0;
 	margin: 0;
@@ -55,7 +59,7 @@ body {
 .right {
 	display: grid;
 	height: 100vh;
-	grid-template-rows: 2fr 1fr;
+	grid-template-rows: 50% 50%;
 }
 
 /* Sidebar */
@@ -348,6 +352,15 @@ h3 {
 
 /* GitHub History*/
 
+.github-history {
+	height: 80vh;
+	overflow-y: auto;
+}
+
+.github-history ul {
+	overflow-y: scroll;
+}
+
 h6 {
 	text-align: center;
 	font-size: 12px;
@@ -357,6 +370,7 @@ h6 {
 }
 
 .issues-pulls {
+	height: 100vh;
 	text-align: center;
 }
 

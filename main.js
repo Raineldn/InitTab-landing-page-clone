@@ -161,6 +161,26 @@ const issues = [
 	"repo": "Repo: Lorem ipsum dolor sit amet.",
 	"issue": "Issue #4",
 	"note": "Lorem ipsum dolor sit amet, consectetur."
+},
+{
+	"repo": "Repo: Raineldn/github-slideshow",
+	"issue": "Issue #1",
+	"note": "Getting started with GitHub"
+},
+{
+	"repo": "Repo: Raineldn/github-slideshow",
+	"issue": "Issue #1",
+	"note": "Getting started with GitHub"
+},
+{
+	"repo": "Repo: Raineldn/github-slideshow",
+	"issue": "Issue #1",
+	"note": "Getting started with GitHub"
+},
+{
+	"repo": "Repo: Raineldn/github-slideshow",
+	"issue": "Issue #1",
+	"note": "Getting started with GitHub"
 }];
 
 issues.forEach(function(li){
